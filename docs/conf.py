@@ -8,11 +8,12 @@
 
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
+# documentation root, make it absolute.
 #
-# import os
+# from pathlib import Path
 # import sys
-# sys.path.insert(0, os.path.abspath('.'))
+# sys.path.insert(0, Path('..').absolute())
+from my_project.version import version
 
 
 # -- Project information -----------------------------------------------------
@@ -22,7 +23,7 @@ copyright = '2022, AMV'
 author = 'AMV'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = version
 
 
 # -- General configuration ---------------------------------------------------
