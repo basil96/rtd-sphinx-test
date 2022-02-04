@@ -1,4 +1,4 @@
-# rtd-test
+# rtd-sphinx-test
 
 Sandbox for learning ReadTheDocs structure.
 
