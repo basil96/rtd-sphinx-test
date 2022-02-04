@@ -21,8 +21,7 @@ sphinx:
   fail_on_warning: true
 
 # Build all formats
-formats:
-  - all
+formats: all
 
 # Optionally declare the Python requirements required to build your docs
 python:
