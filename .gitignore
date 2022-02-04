@@ -1,3 +1,7 @@
 .vscode/
 
 docs/_build/
+
+*.egg-info
+build/
+my_project/version.py
