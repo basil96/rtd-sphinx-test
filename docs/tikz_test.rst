@@ -70,3 +70,16 @@ Control systems: a basic diagram
 .. tikz:: Control system principles (PGF/TikZ example)
    :include: tikz/ctrl-loop.tex
    :libs: arrows,shapes
+
+3D Cube 1
+
+.. rst-class:: centered
+.. tikz:: Cube in 3D (without view transform)
+    :include: tikz/cube1.tex
+
+3D Cube 2
+
+.. rst-class:: centered
+.. tikz:: Cube in 3D (after view transform)
+    :include: tikz/cube2.tex
+    :libs: tikz-3dplot

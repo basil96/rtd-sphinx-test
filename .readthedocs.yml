@@ -12,6 +12,7 @@ build:
     python: "3.8"
   apt_packages:
     - texlive
+    - texlive-pictures
     - pdf2svg
 
 # Build documentation in the docs/ directory with Sphinx
