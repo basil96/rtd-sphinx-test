@@ -71,15 +71,35 @@ Control systems: a basic diagram
    :include: tikz/ctrl-loop.tex
    :libs: arrows,shapes
 
-3D Cube 1
+Drawing demo by author of the package ``tikz-3dplot`` [`source`_]
+
+.. rst-class:: centered
+.. tikz:: Demo of tikz-3dplot
+    :include: tikz/the-3dplot-package.tex
+
+.. _`source`:
+    https://texample.net/tikz/examples/the-3dplot-package/
+
+3D Cube 1 (plain TikZ)
 
 .. rst-class:: centered
 .. tikz:: Cube in 3D (without view transform)
     :include: tikz/cube1.tex
 
-3D Cube 2
+3D Cube 2 (drawn using ``tikz-3dplot``)
 
 .. rst-class:: centered
 .. tikz:: Cube in 3D (after view transform)
     :include: tikz/cube2.tex
-    :libs: tikz-3dplot
+
+Spherical Polar coordinate system (drawn using ``tikz-3dplot``)
+
+.. rst-class:: centered
+.. tikz:: Spherical polar coordinate system
+    :include: tikz/cs-spherical-polar.tex
+
+Spherical Elevation coordinate system (drawn using ``tikz-3dplot``)
+
+.. rst-class:: centered
+.. tikz:: Spherical elevation coordinate system
+    :include: tikz/cs-spherical-elevation.tex

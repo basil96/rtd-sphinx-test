@@ -1,0 +1,54 @@
+% \documentclass[tikz,border=3pt]{standalone}
+% \usepackage{tikz-3dplot}
+% \begin{document}
+
+% Based on the author's tutorial of tikz-3dplot at https://latex.net/tikz-3dplot/
+
+%% viewing angles %%
+\def\viewTheta{60}
+\def\viewPhi{120}
+
+\tdplotsetmaincoords{\viewTheta}{\viewPhi}
+\begin{tikzpicture}
+    [scale=5,
+        tdplot_main_coords,
+        axis/.style={->,black,thick},
+        vector/.style={-stealth,red,very thick},
+        vector guide/.style={dashed,red,thick},
+        azim/.style={blue,thick},
+        elev/.style={blue,thick}]
+
+    %standard tikz coordinate definition using x, y, z coords
+    \coordinate (O) at (0,0,0);
+    
+    %% Declination & azimuth angles %%
+    \def\pTheta{35}
+    \def\pPhi{60}
+
+    %tikz-3dplot coordinate definition using r, theta, phi coords
+    \tdplotsetcoord{P}{1}{\pTheta}{\pPhi}
+    
+    %draw axes
+    \draw[axis] (0,0,0) -- (1,0,0) node[anchor=north east]{$x$};
+    \draw[axis] (0,0,0) -- (0,1,0) node[anchor=north west]{$y$};
+    \draw[axis] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};
+    
+    %draw a vector from O to P
+    \draw[vector] (O) -- (P);
+    
+    %draw guide lines to components
+    \draw[vector guide] (O) -- (Pxy);
+    \draw[vector guide] (Pxy) -- (P);
+    
+    %draw an arc illustrating the angle defining the orientation
+    \tdplotdrawarc[azim]{(O)}{.30}{0}{\pPhi}{anchor=north}{$\phi$}
+
+    %define the rotated coordinate frame to lie in the "theta plane"
+    \tdplotsetthetaplanecoords{\pPhi}
+    
+    \tdplotdrawarc[tdplot_rotated_coords,elev]{(O)}{.35}{90}{\pTheta}
+          {anchor=south west}{$\theta$}
+
+\end{tikzpicture}
+
+% \end{document}

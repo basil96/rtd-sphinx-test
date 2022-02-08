@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Configuration file for the Sphinx documentation builder.
 #
 # This file only contains a selection of the most common options. For a full
@@ -35,9 +36,10 @@ extensions = [
     'sphinxcontrib.tikz',
 ]
 
-tikz_tikzlibraries = 'tikz-3dplot'
-
-# tikz_latex_preamble = r'\pgfplotsset{compat=1.18}'
+tikz_latex_preamble = r'''
+\usepackage{tikz-3dplot}
+'''
+# \pgfplotsset{compat=1.18}
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
