@@ -1,6 +1,9 @@
 .vscode/
 
 docs/_build/
+docs/tikz/*.pdf
+docs/tikz/*.synctex.gz
+docs/tikz/*.aux
 
 __pycache__
 *.egg-info
