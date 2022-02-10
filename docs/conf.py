@@ -33,6 +33,7 @@ release = version
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'sphinx_inline_tabs',
     'sphinxcontrib.tikz',
 ]
 

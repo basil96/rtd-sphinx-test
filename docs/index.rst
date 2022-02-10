@@ -10,6 +10,7 @@ Welcome to documentation for Dox Test!
    :maxdepth: 2
    :caption: Contents:
 
+   tabs_test
    tikz_test
 
 Indices and tables
