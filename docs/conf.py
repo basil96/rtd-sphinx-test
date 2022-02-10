@@ -39,8 +39,8 @@ extensions = [
 
 tikz_latex_preamble = r'''
 \usepackage{tikz-3dplot}
+\pgfplotsset{compat=1.18}
 '''
-# \pgfplotsset{compat=1.18}
 
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
