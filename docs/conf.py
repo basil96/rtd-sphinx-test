@@ -37,11 +37,6 @@ extensions = [
     'sphinxcontrib.tikz',
 ]
 
-tikz_latex_preamble = r'''
-\usepackage{tikz-3dplot}
-\pgfplotsset{compat=1.18}
-'''
-
 # Add any paths that contain templates here, relative to this directory.
 # templates_path = ['_templates']
 
@@ -70,3 +65,9 @@ html_theme_options = {
 
 # -- TikZ extension options --------------------
 tikz_proc_suite = 'pdf2svg'
+
+# Use `tikz-3dplot`, silence pgfplots out-of-date warning
+tikz_latex_preamble = r'''
+\usepackage{tikz-3dplot}
+\pgfplotsset{compat=1.16}
+'''
